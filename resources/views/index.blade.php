@@ -16,6 +16,12 @@
         <div>There are no tasks!</div>
     @endforelse
     <!-- @endif -->
+
+    @if ($tasks->count())
+        <div>
+            {{ $tasks->links() }}
+        </div>
+    @endif
 @endsection
 
     
